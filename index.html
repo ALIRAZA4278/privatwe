@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Interactive Resume Builder - Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Static Interactive Resume Builder by Ali Raza</h1>
+
+        <form id="resumeForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <label for="Education">Education</label>
+                <textarea name="Education" id="Education" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="Skills">Skills</label>
+                <textarea name="Skills" id="Skills" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Work Experience</legend>
+                <label for="WorkExperience">Work Experience</label>
+                <textarea name="WorkExperience" id="WorkExperience" rows="4" required></textarea>
+            </fieldset>
+
+            <button type="submit" id="btn">Generate Resume</button>
+        </form>
+
+
+        
+        <!-- <div id="resumeOutput" class="resume-output">
+            Resume will be displayed here
+       </div> -->
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
